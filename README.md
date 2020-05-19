@@ -1,10 +1,10 @@
 
 Ce repertoire  inculut en premier lieu différents rappels sur le deep learning et en second lieu des exemples de projets de deep learning sur lesquels je me suis amusée à reproduire.
 
-# Rappel de deep-learning:
+# Rappels de deep-learning:
 
-+ Un réseau artificial de neurones ANN est constitué de signaux (variables) d’entrées , une ou plusieurs couches cachées de neurones et un signal de sortie(prédiction)
-+ Les variables d'entrées doivent être sur la même échelle de valeurs exple [-2,2] cad standardiser et normaliser sur la même echelle. 
++ Un réseau artificial de neurones ANN est constitué de signaux d’entrées (variables), une ou plusieurs couches cachées de neurones et un signal de sortie(prédiction)
++ Les variables d'entrées doivent être sur la même échelle de valeurs exple [-2,2] cad standardiser et normaliser. 
 + la prediction peut être de 3 catégories :
   + continue (predire un prix).
   + binaire(oui ou non).
@@ -47,8 +47,6 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
 + la précision change à chaque fois qu'on entraine le modèle ML --> c’est dû au concept # biais-variance # --> on veut un modèle précis dans ces prédictions cad biais faible (erreur) et un modèle souvent précis (variance faible) 
 + pour résoudre le problème de variance élévée ,on applique la techinque K-fold cross validation cad qu' on prends le training set et on divise en k training folds ( avec une 1 portion test et k-1 portion train) à la fin on a k valeurs pour la précision et on fait le (mean de ces valeurs).
 + On étudie cette moyenne de précision par rapport à toutes les précisions (cad l’equart type) pour voir si ces précisions sont proches (variance faible) ou plutôt très dispersés ( haute variance)
-+ Un autre paramètre d’amélioration d’un ANN : régularisation # dropout # c'est une technique pour réduire le surapprentissage (overfiting) des ANN qui cause une variance très elevée dû que le modèle ML est très bon sur le train mais mauvais sur le test --> on a une précision sur le train est plus élevée que sur le test.
-
-#améliorer le ANN dropout pour résoudre le surapprentissage
-#dropout technique qui permet de supprimer la dépendance qui peut se créer entre les neurones au moment de l'apprentissage --> ça permet d'éviter par la suite le surapprentissage des neurones
++ Un autre paramètre d’amélioration d’un ANN : régularisation # dropout # c'est une technique pour résoudre le surapprentissage (overfiting) des ANN qui cause une variance très elevée dû que le modèle ML est très bon sur le train mais mauvais sur le test --> on a une précision sur le train est plus élevée que sur le test.
++ dropout est la technique qui permet de supprimer la dépendance qui peut se créer entre les neurones au moment de l'apprentissage.
 
