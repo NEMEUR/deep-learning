@@ -49,4 +49,5 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
 + On étudie cette moyenne de précision par rapport à toutes les précisions (cad l’equart type) pour voir si ces précisions sont proches (variance faible) ou plutôt très dispersés ( haute variance)
 + Un autre paramètre d’amélioration d’un ANN : régularisation # dropout # c'est une technique pour résoudre le surapprentissage (overfiting) des ANN qui cause une variance très elevée dû que le modèle ML est très bon sur le train mais mauvais sur le test --> on a une précision sur le train est plus élevée que sur le test.
 + dropout est la technique qui permet de supprimer la dépendance qui peut se créer entre les neurones au moment de l'apprentissage.
++ Optimisation des hyperparamètres permet d'augmenter la précision des ANN --> on applique plusieurs combinaisons des hyper paramètres avec l’algortithme GridSearchCV.
 
