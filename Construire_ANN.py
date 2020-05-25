@@ -5,7 +5,7 @@ Created on Sun May 17 13:55:24 2020
 @author: SABRINA NEMEUR
 """
 
-# Importer les librairie
+# Importer les modules
 import pandas as pd
 import numpy as np
 
