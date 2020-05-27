@@ -51,3 +51,23 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
 + dropout est la technique qui permet de supprimer la dépendance qui peut se créer entre les neurones au moment de l'apprentissage.
 + Optimisation des hyperparamètres permet d'augmenter la précision des ANN --> on applique plusieurs combinaisons des hyper paramètres avec l’algortithme GridSearchCV.
 
+# Réseau de neurones à convolution CNN : 
++ Utiliser pour la classification des images
++ Les étapes de fonctionnement des CNN sont :
+  + Etape 1.a "convolution" : 
+     + On a une entrée ex. image --> on applique la convolution (features detectors) --> but : detecter des features --> enregistrer dans des feautures maps --> sortie couche convolution (convolutional layer).
+
+  + Etape 1.b "couche Relu" : 
+     + on utilise la fonction redressor car on a besoin d'une fonction non linéaire pour nos features detectors (les images sont des objets non linéaires) --> on remplace toutes les valeurs négatives par des 0.
+
+  + Etape2 "pooling" : 
+     + objectif: éviter le sur-entrainement de notre CNN car  on supprime l’information qui n’est pas importante 
+     + en entrée:  chaque feauture map --> on applique le max pooling (max des valeurs) --> pooled feature map --> sortie pooling layer.
+  + Etape3 "flattening" : 
+     + transformer le pooling layer (les pooled feature map) en couche d'entrée dans un ANN
+  + Etape4 "ajouter un ANN complétement connecté"
+     + ajouter un ANN où les couches cachées sont complétement connectées.
+
+
+
+
