@@ -67,7 +67,10 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
      + transformer le pooling layer (les pooled feature map) en couche d'entrée dans un ANN
   + Etape4 "ajouter un ANN complétement connecté"
      + ajouter un ANN où les couches cachées sont complétement connectées.
-
++ Pour améliorer notre CNN (précision du modèle):
+  + On ajoute une couche de convolution
+  + On ajoute une couche de complétement connecté
+  + On ajoute la couche de convolution et celle complétement connecté.
 
 
 
