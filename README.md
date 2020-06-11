@@ -4,7 +4,10 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
 # Rappels sur le deep-learning:
 + Un réseau artificial de neurones -> regression et classification
 + Un ANN est constitué de signaux d’entrées (variables), une ou plusieurs couches cachées de neurones et un signal de sortie(prédiction)
-+ Les variables d'entrées doivent être sur la même échelle de valeurs exple [-2,2] cad standardiser et normaliser. 
++ feature scaling: les variables d'entrées doivent être sur la même échelle de valeurscad standardiser et normalisers.
++ standarisation: x_stand=x-mean(x)/standard deviation(x)  [mean=0, equart type=1]
++ normalisation:x_norm=x-min(x)/max(x)-min(x)
++ Les variables d'entrées . 
 + la prediction peut être de 3 catégories :
   + continue (predire un prix).
   + binaire(oui ou non).
