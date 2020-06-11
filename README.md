@@ -1,9 +1,9 @@
 
 Ce repertoire  inculut en premier lieu différents rappels sur le deep learning et en second lieu des exemples de projets de deep learning sur lesquels je me suis amusée à reproduire.
 
-# Rappels de deep-learning:
-
-+ Un réseau artificial de neurones ANN est constitué de signaux d’entrées (variables), une ou plusieurs couches cachées de neurones et un signal de sortie(prédiction)
+# Rappels sur le deep-learning:
++ Un réseau artificial de neurones -> regression et classification
++ Un ANN est constitué de signaux d’entrées (variables), une ou plusieurs couches cachées de neurones et un signal de sortie(prédiction)
 + Les variables d'entrées doivent être sur la même échelle de valeurs exple [-2,2] cad standardiser et normaliser. 
 + la prediction peut être de 3 catégories :
   + continue (predire un prix).
@@ -52,14 +52,13 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
 + Optimisation des hyperparamètres permet d'augmenter la précision des ANN --> on applique plusieurs combinaisons des hyper paramètres avec l’algortithme GridSearchCV.
 
 # Réseau de neurones à convolution CNN : 
-+ Utiliser pour la classification des images
++ Réseau de neurones à convolution --> utiliser pour la classification des images, computer vision
 + Les étapes de fonctionnement des CNN sont :
   + Etape 1.a "convolution" : 
      + On a une entrée ex. image --> on applique la convolution (features detectors) --> but : detecter des features --> enregistrer dans des feautures maps --> sortie couche convolution (convolutional layer).
 
   + Etape 1.b "couche Relu" : 
      + on utilise la fonction redressor car on a besoin d'une fonction non linéaire pour nos features detectors (les images sont des objets non linéaires) --> on remplace toutes les valeurs négatives par des 0.
-
   + Etape2 "pooling" : 
      + objectif: éviter le sur-entrainement de notre CNN car  on supprime l’information qui n’est pas importante 
      + en entrée:  chaque feauture map --> on applique le max pooling (max des valeurs) --> pooled feature map --> sortie pooling layer.
@@ -72,5 +71,21 @@ Ce repertoire  inculut en premier lieu différents rappels sur le deep learning 
   + On ajoute une couche de complétement connecté
   + On ajoute la couche de convolution et celle complétement connecté.
 
+
+# Réseaux de neuronnes récurrents: RNN
++ Un Réseau de neurones récurrents --> séries temporelles
++ Un RNN peut avoir deux problèmes:
+  +  vanishing gradient :Wrec est petit <1 --> gradient petit qui empeche l’entrainement du réseau
+  +  exploding gradient: Wrec est grand >1 
++ Solutions :
+  + Exploding gradient :
+    - retropropagation  tronquée
+    - pénaliser le gradient : réguler
+    - gradient clipping : on met un seuil pour le gradient qui ne peut pas dépasser (max)
+
+  + Vanishing gradient :
+    - initaliser les poids au départ
+    - echo state network
+    - LSTM (large mémoire court-time)
 
 
