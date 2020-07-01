@@ -1,5 +1,10 @@
 
 Ce repertoire  inculut en premier lieu différents rappels sur le deep learning et en second lieu des exemples de projets de deep learning sur lesquels je me suis amusée à reproduire.
+# Modules à installer :
+conda install theano
+conda install tensorflow
+conda install keras
+conda update --all
 
 # Rappels sur le deep-learning:
 + Un réseau artificial de neurones -> regression et classification
