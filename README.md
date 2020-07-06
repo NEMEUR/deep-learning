@@ -1,5 +1,5 @@
 
-Ce repertoire  inculut en premier lieu différents rappels sur le deep learning et en second lieu des exemples de projets de deep learning sur lesquels je me suis amusée à reproduire.
+Ce repertoire  inculut en premier lieu différents rappels sur le deep learning et en second lieu des exemples de projets de deep learning sur lesquels je me suis entrainée à reproduire.
 # Modules à installer :
 conda install theano
 conda install tensorflow
@@ -95,5 +95,12 @@ conda update --all
     - initaliser les poids au départ
     - echo state network
     - LSTM (large mémoire court-time)
+
+
+# Cartes auto-adaptatives (Self_Organizing_Maps ) SOMs :
+ + But: Réduire la dimension du jeu de données en obtenant une carte à deux dimensions --> clustering ou categoriser les données (Algorithme non supervisé)
+ + maj des poids : la plus petite entre le neurone de sortie et l’observation étudiée 
+ + Cas pratique : Détection de fraudes
+        + Détecter les clients les plus susceptibles de frauder et qui ont tendance à avoir leurs dossiers acceptés par la banque (class=1)
 
 
